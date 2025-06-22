@@ -4,7 +4,7 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-gray-400">© 2025 Bhavya Chellapandian. All rights reserved.</p>
-          <p className="text-gray-500 text-sm mt-2">Built with Next.js and Tailwind CSS</p>
+          <p className="text-gray-400 mt-2">Built with Next.js and Tailwind CSS</p>
         </div>
       </div>
     </footer>

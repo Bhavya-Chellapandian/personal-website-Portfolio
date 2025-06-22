@@ -1,41 +1,34 @@
-import { Card, CardHeader, CardTitle } from "@/components/ui/card"
-import { GraduationCap, Calendar, MapPin } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
+import { GraduationCap } from "lucide-react"
 
 export function Education() {
   return (
     <section id="education" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Education</h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Education</h2>
+        </div>
 
-          <Card className="shadow-lg">
-            <CardHeader>
+        <div className="max-w-2xl mx-auto">
+          <Card>
+            <CardContent className="p-6">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-gray-900 text-white rounded-lg">
-                  <GraduationCap className="h-6 w-6" />
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <GraduationCap className="h-6 w-6 text-blue-600" />
                 </div>
                 <div className="flex-1">
-                  <CardTitle className="text-xl mb-2">Bachelor of Technology - Information Technology</CardTitle>
-                  <p className="text-lg font-semibold text-gray-700 mb-2">
-                    SRM Valliammai Engineering College, Chennai
-                  </p>
-                  <div className="flex flex-wrap gap-4 text-sm text-gray-600">
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      <span>2022 - May 2026</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <MapPin className="h-4 w-4" />
-                      <span>Kattankulathur</span>
-                    </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    Bachelor of Technology - Information Technology
+                  </h3>
+                  <p className="text-blue-600 font-medium mb-2">SRM Valliammai Engineering College, Chennai</p>
+                  <p className="text-gray-600 mb-2">Kattankulathur</p>
+                  <div className="flex flex-col sm:flex-row sm:justify-between text-sm text-gray-500">
+                    <span>2022 - May 2026</span>
+                    <span className="font-medium">GPA: 8.0</span>
                   </div>
                 </div>
-                <div className="text-right">
-                  <div className="text-2xl font-bold text-gray-900">8.0</div>
-                  <div className="text-sm text-gray-600">GPA</div>
-                </div>
               </div>
-            </CardHeader>
+            </CardContent>
           </Card>
         </div>
       </div>
